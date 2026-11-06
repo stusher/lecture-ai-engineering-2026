@@ -54,7 +54,7 @@ agent.tool_plain(tools.get_lecture_summary)
 # TODO(第3回 演習): tools.py に make_quiz を作り、ここで登録しよう
 agent.tool_plain(tools.make_quiz)
 
-# 第3回 宿題: ファイルへの保存は取り消しにくいので、実行前に利用者の承認を挟む
+# 第3回 宿題: 学習を記録するツール。ファイルへの保存は取り消しにくいので、実行前に利用者の承認を挟む
 agent.tool_plain(tools.save_learning_log, requires_approval=True)
 
 # 第5回: 使う MCP サーバーの設定ファイル。Claude Desktop や Cursor と同じ "mcpServers" 形式
